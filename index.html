@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Adriana's Homepage</title>
+  <meta charset="utf-8">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Libre+Franklin|Merienda:700" rel="stylesheet">
+</head>
+
+<body>
+
+
+
+
+<!-- <div>
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-inner clearfix">
+        <div class="mobile-nav-top-bar">
+          <p id="toptitle">adriana s.</p>
+        </div>
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#">home</a></li>
+          <li><a href="#">education</a></li>
+          <li><a href="#">porfolio</a></li>
+          <li><a href="#">travels</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</div> -->
+
+<div>
+  <nav class="navbar navbar-default">
+    <div class="container">
+      <div class="navbar-header">
+        <a href="#" class="navbar-brand">adriana s.</a>
+      </div>
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#">home</a></li>
+          <li><a href="#">education</a></li>
+          <li><a href="#">porfolio</a></li>
+          <li><a href="#">travels</a></li>
+        </ul>
+      </div>
+  </nav>
+</div>
+
+<div class="allcontent">
+
+<div>
+    <h1>
+      hi, i'm adriana
+    </h1>
+</div>
+
+
+<div> <!-- beach image -->
+<img src="./images/beach.jpg" alt="Beach" class="img-responsive">
+</div>
+
+<div> <!-- main content -->
+  <div class="container-fluid content">
+
+    <div class="row">
+        <div class="col-xs-3">
+          <img src="./images/me.jpg" alt="Headshot" id="#headshot" class="img-responsive img-rounded">
+        </div>
+        <div class="col-xs-9" id="#aboutme">
+          <h2>about me</h2>
+          <p>Hola! I’m Adriana (Adriana Alexia Selman Troncoso, if I’m citing my passport correctly). I was born and raised in the Dominican Republic (hence the Spanglish), a half-island in the Caribbean where temperatures never go below 20 degrees celsius, and where rice, beans and plantains are as common as the common cold in November. Anyone that has ever met a Dominican knows that there’s certain qualities we all share, such as a love for strong coffee and a constant need to be loud when we don’t need to be. But more than just my tastes in coffee and noise levels, my Dominican upbringing also gave me an immense value for family. I was fortunate enough to grow up within a a family of tightly-knit first cousins, great-uncles, family friends, and everything in between, where loyalty is the norm, friendly teasing is mandatory, and there’s a non-negotiable family get-together every Sunday. Being permanently separated from my family for university is one of the hardest things I’ve had to do, although constantly-active Whatsapp group conversations thankfully do keep the communication alive. Moving away also helped me learn that family values can easily extend to non-blood-relative interactions, such as in being there for friends in need and being open to people of many different cultures and backgrounds. My ability to work hard and to work in a team, yet to also know when to let loose and have a little fun, originates in my big family and Dominican culture as well.</p>
+
+          <p>Another way that my culture makes its way into my personality is in my love for music and dance. Since I can remember, I’ve been involved in a series of different dance and music classes, and my parents always say that I used to think the world was my stage when I was little: apparently I could set up a one-man show in minutes to entertain anyone that would (probably reluctantly) watch or listen. Dance has always been my expressive outlet, and I’ve even been able to spread the passion by teaching it to kids. I also love to sing in choirs, where I’ve learned that although the audience can’t hear every individual voice, the cooperation that it takes to build a song can often lead to better music than any one voice could accomplish.</p>
+
+          <p>Feel free to look around my website to learn more about my education and my work, and to see pictures of my recent travels. Enjoy!</p>
+          </div>
+      <div class="col-xs-12" id="#aboutthispage">
+        <h2>about this page</h2>
+        <p>I built this page with a mindset of simplicity. My biggest pet peeve when it comes to website browsing is when there is so much information - in any form - that the cognitive overload makes it overwhelming to try to navigate its components. I would much rather go through a site that is broken up into different parts than for everything to be thrown at me at the same time. For this reason, I opted to include only a brief “about me” in my homepage, this description of my thought processes when building it, and some tools to contact or connect with me (see below). I did, however, also include a navigation bar where I plan to add some more important information about myself: my educational background, my work in terms of a professional portfolio, and a section to showcase my recent travels. This minimalist mindset also came into play when choosing a color scheme, where I decided to go with varying shades of blue that matched with my main image, with a very light blue shade as the background color in order to relieve some eye strain from the usual bright white.</p>
+        <p>In terms of the organization of the elements of the page, I relied on Bootstrap features to make it responsive. The main beach image, for example, was originally programmed as a jumbotron, yet there were so many styles that I had to add to make it act the way that I wanted it to, that I thankfully then found the “img-responsive” Bootstrap component, which makes it flow with the page nicely. The grid format also worked to my advantage when styling my headshot next to the “about me”, as well as when creating the contact form next to the social media links. I played around with these for a while, until I found that formatting all the column sections as “xs” was the best way to keep them stable, even when the browser size changes (at least in my case where I have few elements per row). Finally, Bootstrap also made the contact form and the navbar look nice and smooth, while keeping things simple and minimalist, with very little styling effort from my own part.</p>
+      </div>
+    </div>
+
+    <hr>
+
+    <div class="row" id="#contactme">
+      <div class="col-xs-9"> <!-- contactform -->
+        <form>
+          <h3>feel free to contact me!</h3>
+
+          <div class="form-group">
+          <label for="inputName">Name</label>
+          <input class="form-control" type="text" id="inputName"
+            placeholder="Jane Smith">
+          </div>
+
+          <div class="form-group">
+          <label for="inputEmail">Email</label>
+          <input class="form-control" type="text" id="inputEmail"
+            placeholder="janesmith@example.com">
+          </div>
+
+          <div class="form-group">
+          <label for="inputComments">Comments</label>
+          <textarea class="form-control" id="inputComments"></textarea>
+          </div>
+
+          <input class="btn btn-default pull-right"  type="submit" value="submit">
+        </form>
+      </div>
+
+<!-- social media -->
+        <br>
+        <br>
+        <br>
+
+        <div class="col-xs-1">
+          <a href="https://www.facebook.com/adriana.alexia" class="thumbnail">
+            <img src="./images/facebook.png" alt="Facebook">
+          </a>
+        </div>
+        <div class="col-xs-1">
+          <a href="https://www.instagram.com/adrianaselman/?hl=en" class="thumbnail">
+            <img src="./images/instagram.png" alt="Instagram">
+          </a>
+        </div>
+        <div class="col-xs-1">
+          <a href="https://www.linkedin.com/profile/preview?locale=en_US&trk=prof-0-sb-preview-primary-button" class="thumbnail">
+            <img src="./images/linkedin.png" alt="LinkedIn">
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+
+
+
+
+</html>

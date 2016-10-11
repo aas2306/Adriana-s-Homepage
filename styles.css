@@ -1,0 +1,29 @@
+body {
+  background-color: #F7F9F9;
+}
+
+.content {
+  padding: 20px 15px;
+  margin: 0px 30px;
+}
+
+h1, h2, h3 {
+  font-family: 'Merienda', Garamond, Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  color: #2993C7;
+}
+
+h1 {
+  text-align: justify;
+  margin-left: 30px;
+  font-size: 30px;
+}
+
+p {
+  color: #007EA7;
+  font-family: 'Libre Franklin', sans-serif;
+}
+
+.navbar {
+  font-family: 'Libre Franklin', sans-serif;
+}
