@@ -69,3 +69,16 @@ height: 100%;
   margin-right: 40px;
   margin-left: 40px;
 }
+
+.correct {
+  color: green;
+  font-weight: bold;
+}
+
+.incorrect {
+  color: red;
+}
+
+.hide {
+  display: none;
+}

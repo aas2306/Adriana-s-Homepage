@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="stylesheet" type="text/css" href="styles.css">
     <link href="https://fonts.googleapis.com/css?family=Andika|Finger+Paint|Julius+Sans+One" rel="stylesheet">
 </head>
 
@@ -58,7 +58,7 @@
   <section class="top" id="top">
     <header>
       <div>
-        <img src="../images/header.png" alt="Hand Gestures and Persuasion" class="img-responsive">
+        <img src="./media/header.png" alt="Hand Gestures and Persuasion" class="img-responsive">
       </div>
       <div class="textbox">
         <p>So you're looking to become the master of persuasion? You've come to the right place. In this interactive lesson you'll learn about different hand gesture techniques, which ones are the best for persuasion, and how to use them yourself!</p>
@@ -77,19 +77,19 @@
       <div class="videoWrapper">
         <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
           <div class="embed-responsive embed-responsive-16by9">
-            <video class="embed-responsive-item video" src="../videos/video1.mp4" controls type="video/mp4">
+            <video class="embed-responsive-item video" src="./media/video1.mp4" controls type="video/mp4">
             </video>
           </div>
         </div>
         <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
           <div class="embed-responsive embed-responsive-16by9">
-            <video class="embed-responsive-item video" src="../videos/video2.mp4" controls type="video/mp4">
+            <video class="embed-responsive-item video" src="./media/video2.mp4" controls type="video/mp4">
             </video>
           </div>
         </div>
         <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
           <div class="embed-responsive embed-responsive-16by9">
-            <video class="embed-responsive-item video" src="../videos/video3.mp4" controls type="video/mp4">
+            <video class="embed-responsive-item video" src="./media/video3.mp4" controls type="video/mp4">
             </video>
         </div>
       </div>
@@ -125,7 +125,7 @@
 					  	<div class="row">
 							  <div class="col-xs-6">
 			            <div class="embed-responsive embed-responsive-16by9">
-			              <video class="embed-responsive-item video" src="../videos/question1.mp4" controls type="video/mp4">
+			              <video class="embed-responsive-item video" src="./media/question1.mp4" controls type="video/mp4">
 				            </video>
 				          </div>
 				        </div>
@@ -134,26 +134,26 @@
                     <p>What kind of hand gesture is the speaker using in this video? Choose the best answer.</p>
                     <div class="radio">
                       <label>
-                        <input type="radio" name="q1" id="optionsRadios1" value="Palm-Up">Palm-Up
+                        <input type="radio" name="q1" id="correctAnswer1" value="Palm-Up">Palm-Up
                       </label>
                     </div>
                     <div class="radio">
                       <label>
-                        <input type="radio" name="q1" id="optionsRadios2" value="Palm-Down">Palm-Down
+                        <input type="radio" name="q1" value="Palm-Down">Palm-Down
                       </label>
                     </div>
                     <div class="radio">
                       <label>
-                        <input type="radio" name="q1" id="optionsRadios3" value="Finger-Pointed">Finger-Pointed
+                        <input type="radio" name="q1" value="Finger-Pointed">Finger-Pointed
                       </label>
                     </div>
                     <div class="radio">
                       <label>
-                        <input type="radio" name="q1" id="optionsRadios4" value="TheOK">The OK
+                        <input type="radio" name="q1" value="TheOK">The OK
                       </label>
                     </div>
 							  	</div>
-                  <button type="submit" class="btn btn-primary">Check answer</button>
+                  <button id="submit1" type="submit" class="btn btn-primary">Check answer</button>
 				        </div>
 					  	</div>
 				  	</div>
@@ -161,6 +161,51 @@
 			</div>
 
 		</div>
+
+    <div class="row">
+      <div class="col-xs-12">
+      <div class="panel panel-default">
+        <div class="panel-heading">Question 2</div>
+          <div class="panel-body">
+            <div class="row">
+              <div class="col-xs-6">
+                <div class="embed-responsive embed-responsive-16by9">
+                  <video class="embed-responsive-item video" src="./media/question2.mp4" controls type="video/mp4">
+                  </video>
+                </div>
+              </div>
+              <div class="col-xs-6">
+                <div class="quizQuestion">
+                  <p>What kind of hand gesture is the speaker using in this video? Choose the best answer.</p>
+                  <div class="radio">
+                    <label>
+                      <input type="radio" name="q2" value="Palm-Up">Palm-Up
+                    </label>
+                  </div>
+                  <div class="radio">
+                    <label>
+                      <input type="radio" name="q2" value="Palm-Down">Palm-Down
+                    </label>
+                  </div>
+                  <div class="radio">
+                    <label>
+                      <input type="radio" name="q2" value="Finger-Pointed">Finger-Pointed
+                    </label>
+                  </div>
+                  <div class="radio">
+                    <label>
+                      <input type="radio" name="q2" id="correctAnswer2" value="TheOK">The OK
+                    </label>
+                  </div>
+                </div>
+                <button id="submit2" type="submit" class="btn btn-primary">Check answer</button>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+
+  </div>
 
     </section>
 
@@ -184,11 +229,6 @@
               <p>Try convincing two or three (unknowing!) people of the same thing using the different gestures. See which one works out the best!</p>
             </div>
           </div>
-            <!-- <ol>
-              <li>Grab a video camera (or a mirror). Practice saying one sentence that is meant to be persuasive (like, "I am the best candidate for this presidency and you should definitely vote for me!") using the palms-up method. Note what kinds of gestures look and feel more natural to you and practice those in your daily life.</li>
-              <li>Grab a friend. Practice the palms-up method with a friend, using persuasive sentences that are more relevant to you (i.e., if you work in pharmaceuticals, you could practice "selling" one of your products to your friend). Have them give you feedback on what they think works best.</li>
-              <li>Test it out. Try convincing two or three (unknowing!) people of the same thing using the different gestures. See which one works out the best!</li>
-            </ol> -->
         </div>
     </section>
 
@@ -205,6 +245,7 @@
   <p>Pease, A. &amp; Pease, B. (2004). <i>The definitive book of body language.</i> Australia: Pease International.</p>
 </footer>
 
+<script src="code.js"></script>
 </body>
 
 </html>
